@@ -44,5 +44,12 @@ txCircle(750, 100, 20);
 txCircle(725, 100, 25);
 txCircle(695, 97, 20);
 
+txCircle(143, 200, 20);
+txCircle(162, 193, 23);
+txCircle(179, 199, 21);
+
+txCircle(720, 210, 21);
+txCircle(700,
+
 return 0;
 }
