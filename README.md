@@ -1,55 +1,62 @@
-# Картинка😊
-
 #include "txlib.h"
-int main()
+int main ()
 {
 int x = 400;
 int y = 200;
 
-txCreateWindow(800, 600);
-txSetFillColor(TX_BLUE);
-txRectangle(0, 0, 800, 600);
+txCreateWindow (800, 600);
+txSetFillColor (TX_BLUE);
+txRectangle (0, 0, 800, 600);
 
-txSetFillColor(TX_RED);
-txSetColor(TX_BLACK);
-txCircle(x, y, 100);
+txSetFillColor (TX_RED);
+txSetColor (TX_BLACK);
+txCircle (x, y, 100);
 
-txLine(x-100, y, x+100, y);
-txLine(x-100, y+1, x+100, y+1);
-txLine(x-100, y-1, x+100, y-1);
-txLine(x-100, y+2, x+100, y+2);
-txLine(x-100, y-2, x+100, y-2);
+txLine (x-100, y, x+100, y);
+txLine (x-100, y+1, x+100, y+1);
+txLine (x-100, y-1, x+100, y-1);
+txLine (x-100, y+2, x+100, y+2);
+txLine (x-100, y-2, x+100, y-2);
 
-txLine(x-100, y, x, y+100);
-txLine(x+100, y, x, y+100);
-txLine(x, y, x, y+100);
-txLine(x, y, x, y-100);
-txLine(x-100, y, x, y-100);
-txLine(x+100, y, x, y-100);
+txLine (x-100, y, x, y+100);
+txLine (x+100, y, x, y+100);
+txLine (x, y, x, y+100);
+txLine (x, y, x, y-100);
+txLine (x-100, y, x, y-100);
+txLine (x+100, y, x, y-100);
 
-txSetFillColor(TX_BROWN);
-txRectangle(x-50, y+250, x+50, y+320);
+txSetFillColor (TX_BROWN);
+txRectangle (x-50, y+250, x+50, y+320);
 
-txLine(x, y+100, x+50, y+250);
-txLine(x, y+100, x-50, y+250);
+txLine (x, y+100, x+50, y+250);
+txLine (x, y+100, x-50, y+250);
 
-txSetFillColor(TX_WHITE);
-txSetColor(TX_WHITE);
+txSetFillColor (TX_WHITE);
+txSetColor (TX_WHITE);
 
-txCircle(150, 100, 20);
-txCircle(125, 85, 25);
-txCircle(95, 90, 20);
+txCircle (x-250, y-100, 20);
+txCircle (x-275, y-115, 25);
+txCircle (x-305, y-110, 20);
 
-txCircle(750, 100, 20);
-txCircle(725, 100, 25);
-txCircle(695, 97, 20);
+txCircle (x+350, y-100, 20);
+txCircle (x+325, y-100, 25);
+txCircle (x+295, y-103, 20);
 
-txCircle(143, 200, 20);
-txCircle(162, 193, 23);
-txCircle(179, 199, 21);
+txCircle (x-257, y, 20);
+txCircle (x-236, y+7, 23);
+txCircle (x-221, y+1, 21);
 
-txCircle(720, 210, 21);
-txCircle(700,
+txCircle (x+320, y+10, 21);
+txCircle (x+300, y+10, 23);
+txCircle (x+274, y+15, 22);
+
+txCircle (x-230, y+172, 21);
+txCircle (x-248, y+179, 22);
+txCircle (x-207, y+177, 22);
+
+txCircle (x+340, y+173, 21);
+txCircle (x+317, y+169, 22);
+txCircle (x+295, y+170, 22);
 
 return 0;
 }
