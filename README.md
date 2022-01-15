@@ -19,14 +19,14 @@ txRectangle (0, 0, 800, 600);
 int x = 400;
 int y = 600;
 
-for (int i=0; i<70; i++)
+for (int t=0; t<100; t++)
 {
     txClear();
 
     txSetFillColor (TX_BLUE);
     txRectangle (0, 0, 800, 600);
 
-    y=y-10;
+    y=y-5;
     air_ball(x,y);
 
     cloud_1(400,200);
@@ -34,7 +34,6 @@ for (int i=0; i<70; i++)
     cloud_3(400,200);
 
     txSleep(60);
-
 }
 
 return 0;
@@ -47,18 +46,18 @@ Shar (x, y);
 Soed_line (x, y);
 }
 
-void cloud_1 (int x, int y)
+void cloud_1 (int x, int y, int move)
 {
 txSetFillColor (TX_WHITE);
 txSetColor (TX_WHITE);
 
-txCircle (x-250, y-100, 20);
-txCircle (x-275, y-115, 25);
-txCircle (x-305, y-110, 20);
+txCircle (x-250+5*move, y-100, 20);
+txCircle (x-275+5*move, y-115, 25);
+txCircle (x-305+5*move, y-110, 20);
 
-txCircle (x+350, y-100, 20);
-txCircle (x+325, y-115, 25);
-txCircle (x+295, y-110, 20);
+txCircle (x+350+5*move, y-100, 20);
+txCircle (x+325+5*move, y-115, 25);
+txCircle (x+295+5*move, y-110, 20);
 }
 
 void cloud_2 (int x,int y)
@@ -90,7 +89,7 @@ txCircle (x+295, y+210, 22);
 
 void Shar (int x, int y)
 {
-txSetFillColor (TX_RED);
+txSetFillColor (RGB (136, 62, 0));
 txSetColor (TX_BLACK,3);
 txCircle (x, y, 100);
 
@@ -107,7 +106,7 @@ txLine (x+100, y, x, y-100);
 void Karzina (int x, int y)
 {
 txSetColor (TX_BLACK,2);
-txSetFillColor (TX_BROWN);
+txSetFillColor (RGB (51, 23, 0));
 txRectangle (x-50, y+250, x+50, y+320);
 }
 
