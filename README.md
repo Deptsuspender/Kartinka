@@ -117,3 +117,4 @@ void Soed_line (int x, int y)
     txLine (x, y+100, x-50, y+250);
 }
 
+
