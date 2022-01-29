@@ -19,7 +19,7 @@ int main ()
     int x = 400;
     int y = 600;
 
-    for (int t=0; t<150; t++)
+    for (int t=1; t<250; t++)
 {
     txClear();
 
@@ -29,11 +29,11 @@ int main ()
     y=y-5;
     air_ball(x,y);
 
-    cloud_1(x, 200, 0);
-    cloud_2(x, 250, 0);
-    cloud_3(x, 320, 0);
+    cloud_1(x, 200, 1.5*((t/8)%2));
+    cloud_2(x, 250, -1.5*((t/8)%2+1));
+    cloud_3(x, 320, 1.5*((t/8)%2));
 
-    txSleep(60);
+    txSleep(10);
 }
 
 return 0;
