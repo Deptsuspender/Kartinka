@@ -118,3 +118,35 @@ void Soed_line (int x, int y)
 }
 
 
+
+
+
+
+#include "txlib.h"
+
+void Pol (int x, int y);
+
+int main ()
+
+{
+    txCreateWindow (800, 600);
+    txSetFillColor (TX_BLUE);
+    txRectangle (0, 0, 800, 600);
+    Pol (0,0);
+
+    int x = 400;
+    int y = 300;
+
+    return 0;
+}
+
+
+void Pol (int x, int y)
+
+{
+    txSetFillColor (TX_BROWN);
+    txSetColor (TX_BROWN);
+    txRectangle (x+100, y+10, x+10, y+100);
+}
+
+
