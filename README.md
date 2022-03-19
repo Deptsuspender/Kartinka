@@ -125,6 +125,7 @@ void Soed_line (int x, int y)
 #include "txlib.h"
 
 void Pol (int x, int y);
+void Sharik (int x, int y);
 
 int main ()
 
@@ -146,7 +147,14 @@ void Pol (int x, int y)
 {
     txSetFillColor (TX_BROWN);
     txSetColor (TX_BROWN);
-    txRectangle (x+100, y+10, x+10, y+100);
+    txRectangle (x, y+600, x+800, y+520);
 }
 
+void Sharik (int x, int y)
+
+{
+    txSetFillColor (RGB (136, 62, 0));
+    txSetColor (TX_BLACK, 3);
+    txCircle ();
+}
 
